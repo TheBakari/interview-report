@@ -1,0 +1,71 @@
+
+
+.main {
+  
+  display: flex;
+  margin: 100px auto;
+  justify-content: center;
+  align-items: center;
+
+  height: 60vh;
+  width: 60vh;
+  border-radius: 50%;
+ 
+  -webkit-animation: AnimationName 4s ease infinite;
+  -moz-animation: AnimationName 4s ease infinite;
+  animation: AnimationName 4s ease infinite;
+
+
+}
+.mainDisappear {
+    
+    display: flex;
+    margin: -100% auto;
+    justify-content: center;
+    align-items: center;
+  
+    height: 60vh;
+  width: 60vh;
+    opacity: 0;
+    -webkit-animation: AnimationName 4s ease infinite;
+    -moz-animation: AnimationName 4s ease infinite;
+    animation: AnimationName 4s ease infinite;
+ 
+    transition: all 5s ease;
+   
+  }
+
+
+@keyframes anime {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes animeone {
+  0% {
+    transform: rotate(-60deg);
+  }
+  50% {
+    transform: rotate(-300deg);
+  }
+  100% {
+    transform: rotate(-60deg);
+  }
+}
+@keyframes animetwo {
+  0% {
+    transform: rotate(60deg);
+  }
+  50% {
+    transform: rotate(300deg);
+  }
+  100% {
+    transform: rotate(60deg);
+  }
+}
